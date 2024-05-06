@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+
 
 ## Hey, ssup?
 ### It is so pleasant to see you showing an interest to spend some time here.
