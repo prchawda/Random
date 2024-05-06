@@ -1,3 +1,5 @@
+theme: jekyll-theme-minimal
+
 # anvil-core
 
 The anvil-core Java library is intended to be a secure and stable way to interact with the Kyvos REST API, Kyvos Java API, and the Azure Databricks REST API.  This is currently done via the `AnvilClient` class and the individual `AzureRestApiClient`,`KyvosRestApiClient`, and `KyvosJavaApiClient` client classes.
