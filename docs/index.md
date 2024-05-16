@@ -5,7 +5,7 @@ theme: jekyll-theme-midnight
 ### Now that you have been here, you can click on any of these links to read the blogs you would want to.
 
  
- [The very first one](1.md)
+ [How to handle secrets in KV and in k8s](1.md)
 
  
  [This one is second](2.md)
