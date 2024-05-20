@@ -8,4 +8,4 @@
  [How to handle secrets in KV and in k8s](1.md)
 
  
- [This one is second](2.md)
+ [81 Kubernetes Errors You Should Know and How to Fix Them](2.md)
