@@ -9,3 +9,6 @@
 
  
  [81 Kubernetes Errors You Should Know and How to Fix Them](2.md)
+ 
+
+ [Deploy Postgress instance without using an operator](postgress-without-operator.md)
