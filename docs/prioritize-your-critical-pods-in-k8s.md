@@ -16,7 +16,7 @@ For this, all you need is to know about "PriorityClasses" in Kubernetes and how 
 
       👉 The priority of a pod can be set using "PriorityClasses" in Kubernetes.
 
-      ![Priority.yml](/images/podPriority.png)
+       ![Priority](https://github.com/prchawda/Random/blob/main/docs/images/podPriority.png)
 
 ✅ What is PriorityClass and how it is used to prioritize a pod?
 
