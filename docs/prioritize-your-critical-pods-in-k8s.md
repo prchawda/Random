@@ -16,6 +16,8 @@ For this, all you need is to know about "PriorityClasses" in Kubernetes and how 
 
       👉 The priority of a pod can be set using "PriorityClasses" in Kubernetes.
 
+      ![Priority.yml](/images/podPriority.png)
+
 ✅ What is PriorityClass and how it is used to prioritize a pod?
 
       👉 A PriorityClass is a non-namespaced object that defines a mapping from a priority class name to the integer value of the priority.
