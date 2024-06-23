@@ -12,3 +12,5 @@
  
 
  [Deploy Postgress instance without using an operator](postgress-without-operator.md)
+ 
+ [Prioritise your critical pod in Kubernetes](prioritize-your-critical-pods-in-k8s.md)
