@@ -14,13 +14,15 @@ Now, we are good to start pulling the PostgreSQL Docker image to our local machi
 
 docker pull Postgres
 
-**FIG3**
+![image](https://github.com/user-attachments/assets/c24ad0a8-c773-491a-b272-e400375dbfcf)
+
 
 Once the docker image has been pulled to the local machine, you can check all installed images on your local by the following command.
 
 docker image ls
 
-**FIG4**
+![image](https://github.com/user-attachments/assets/b41431e1-631e-4f15-99e1-8f062b2890e2)
+
 
 As you can see in the above figure, the PostgreSQL image has been installed on your machine. Now, that the image is installed, the next step would be to run this image. When we run a Docker image, a new container is created for that image. In other words, a container is a running instance of a Docker imag
 
@@ -38,7 +40,8 @@ In the above command, we call the run method on docker that will create a runnin
 
 Finally, we provide the name of the docker image from which the container is to be created.
 
-FIG5
+![image](https://github.com/user-attachments/assets/92509d0a-b982-423e-8d95-1873ef19c8b0)
+
 
 Once you run the command, you can see that the container starts up and is ready to accept database connections. An important point to note here is that we have not executed the command in detached mode, which means the database or the container will be running as long as the terminal is open.
 
@@ -50,7 +53,8 @@ This command will start an interactive terminal inside the container. Next, you 
 
 psql -h localhost _U postgres
 
-FIG6
+![image](https://github.com/user-attachments/assets/f9ebbe68-adde-4aa4-a738-3329c4a04403)
+
 
 You can list all the running databases and execute other SQL statements once connected through the command line utility. If you prefer using the PostgreSQL environment through a GUI, then follow along. We will also install the PgAdmin4 utility and connect it to the PostgreSQL database from it.
 
@@ -60,7 +64,8 @@ You can follow similar steps while pulling the docker image for PgAdmin4. You ca
 
 docker pull dpage/pgadmin4
 
-**FIG7**
+![image](https://github.com/user-attachments/assets/7fe44ce3-b2f3-4d4b-a803-85f27f0ec959)
+
 
 To run the PgAdmin4 docker image, you need to run the following command.
 
@@ -68,11 +73,13 @@ docker run -e 'PGADMIN_DEFAULT_EMAIL=test@domain.local' -e 'PGADMIN_DEFAULT_PASS
 
 The PgAdmin4 image accepts two mandatory environment variables PGADMIN_DEFAULT_EMAIL and PGADMIN_DEFAULT_PASSWORD that enable the web application to log in. Along with that, we also specify the port on which the PgAdmin4 will run. We have specified that port 80 of docker shall bind to port 8080 of the host machine. That means the web app will be available on port 8080 from the host machine.
 
-**FIG8**
+![image](https://github.com/user-attachments/assets/a34c49ac-be78-4dec-b72c-115921154392)
+
 
 Once the docker container is up and running, you can head over to the web browser and connect to [http://localhost:8080](http://localhost:8080/).
 
-FIG9
+![image](https://github.com/user-attachments/assets/baa96c6c-27f4-427d-aeaf-3f8164f9423b)
+
 
 **Connecting to PostgreSQL database from PgAdmin4**
 
@@ -80,16 +87,20 @@ Once you have logged in to the PgAdmin4 console, the final step is to create a s
 
 docker inspect pgsql-dev
 
-**Fig10**
+![image](https://github.com/user-attachments/assets/c5b6c345-df94-408f-b0aa-bc90cb425c56)
+
 
 Scroll down below until you find the section Networks. bridge.IPAddress. Copy the IPAddress and store it for later use.
 
-FIG11
+![image](https://github.com/user-attachments/assets/e9287076-5562-4b8d-8632-6b43030d0da1)
+
 
 Now that we have the IP address of the PostgreSQL database, head over to the PgAdmin4 window and create a new server. Use the IP Address as copied in the previous step and the password you used while creating the container. Click on **Save**.
 
-Fig12
+![image](https://github.com/user-attachments/assets/b32d1693-b286-4d81-bbee-0e9afce15622)
+
 
 Once the connection is successful, you will see the dashboard for the instance will open up with the default Postgres database.
 
-FIG13
+![image](https://github.com/user-attachments/assets/67179d7f-daf1-452e-974f-bf49ece6a826)
+
